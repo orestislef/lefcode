@@ -345,7 +345,7 @@ export namespace ACP {
           "terminal-auth": {
             command: "opencode",
             args: ["auth", "login"],
-            label: "OpenCode Login",
+            label: "LEF CODE Login",
           },
         }
       }
@@ -365,7 +365,7 @@ export namespace ACP {
         },
         authMethods: [authMethod],
         agentInfo: {
-          name: "OpenCode",
+          name: "LEF CODE",
           version: Installation.VERSION,
         },
       }

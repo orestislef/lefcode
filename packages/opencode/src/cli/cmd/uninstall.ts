@@ -54,7 +54,7 @@ export const UninstallCommand = {
     UI.empty()
     UI.println(UI.logo("  "))
     UI.empty()
-    prompts.intro("Uninstall OpenCode")
+    prompts.intro("Uninstall LEF CODE")
 
     const method = await Installation.method()
     prompts.log.info(`Installation method: ${method}`)
@@ -218,7 +218,7 @@ async function executeUninstall(method: Installation.Method, targets: RemovalTar
   }
 
   UI.empty()
-  prompts.log.success("Thank you for using OpenCode!")
+  prompts.log.success("Thank you for using LEF CODE!")
 }
 
 async function getShellConfigFile(): Promise<string | null> {

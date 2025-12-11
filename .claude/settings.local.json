@@ -17,7 +17,18 @@
       "Bash(powershell -Command \"bun script/build.ts --single --skip-install\")",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(powershell -Command \"Copy-Item packages/opencode/dist/lefcode-windows-x64/bin/lefcode.exe $env:LOCALAPPDATA/Microsoft/WindowsApps/lefcode.exe -Force; Get-Item $env:LOCALAPPDATA/Microsoft/WindowsApps/lefcode.exe\")",
+      "Bash(powershell -Command \"$dest = [Environment]::GetFolderPath(''LocalApplicationData'') + ''\\Microsoft\\WindowsApps\\lefcode.exe''; Copy-Item ''packages\\opencode\\dist\\lefcode-windows-x64\\bin\\lefcode.exe'' $dest -Force; echo \"\"Copied to: $dest\"\"\")",
+      "Bash(powershell -Command \"[Environment]::SetEnvironmentVariable(''Path'', [Environment]::GetEnvironmentVariable(''Path'', ''User'') + '';C:\\Users\\billy\\bin'', ''User'')\")",
+      "Bash(powershell -Command \"lefcode --version\")",
+      "Bash(\"$HOME/bin/lefcode.exe\" --version)",
+      "Bash(git remote add:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo create:*)",
+      "Bash(echo:*)"
     ]
   }
 }
