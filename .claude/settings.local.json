@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(cat:*)",
+      "Bash(xargs sed:*)",
+      "Bash(bun install:*)",
+      "Bash(where npm:*)",
+      "Bash(npm --version:*)",
+      "Bash(powershell -Command \"npm i -g bun\")",
+      "Bash(powershell -Command \"cd packages/opencode; bun install\")",
+      "Bash(powershell -Command \"bun install\")",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(powershell -Command \"bun install --ignore-scripts\")",
+      "Bash(powershell -Command \"bun run build --single --skip-install\")",
+      "Bash(powershell -Command \"bun script/build.ts --single --skip-install\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
