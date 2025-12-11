@@ -28,7 +28,8 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(gh repo create:*)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

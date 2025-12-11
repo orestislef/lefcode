@@ -724,12 +724,12 @@ export namespace Config {
         npm: "@ai-sdk/openai-compatible",
         env: [],
         models: {
-          "qwen3-30b-a3b": {
-            name: "Qwen3 30B A3B",
-            id: "qwen3-30b-a3b",
+          "mistralai/ministral-3b": {
+            name: "Ministral 3B",
+            id: "mistralai/ministral-3b",
             limit: {
-              context: 40960,
-              output: 8192,
+              context: 32768,
+              output: 4096,
             },
             tool_call: true,
             temperature: true,
@@ -743,7 +743,7 @@ export namespace Config {
         },
       },
     },
-    model: "lef-local/qwen3-30b-a3b",
+    model: "lef-local/mistralai/ministral-3b",
   }
 
   export const global = lazy(async () => {
