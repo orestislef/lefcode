@@ -724,9 +724,9 @@ export namespace Config {
         npm: "@ai-sdk/openai-compatible",
         env: [],
         models: {
-          "mistralai/ministral-3b": {
-            name: "Ministral 3B",
-            id: "mistralai/ministral-3b",
+          "mistralai/mistral-3-3b": {
+            name: "Mistral 3 3B",
+            id: "mistralai/mistral-3-3b",
             limit: {
               context: 32768,
               output: 4096,
@@ -743,7 +743,7 @@ export namespace Config {
         },
       },
     },
-    model: "lef-local/mistralai/ministral-3b",
+    model: "lef-local/mistralai/mistral-3-3b",
   }
 
   export const global = lazy(async () => {
